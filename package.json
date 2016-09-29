@@ -1,0 +1,22 @@
+{
+  "name": "transtatic",
+  "version": "1.0.0",
+  "description": "Personal site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshuadeleon/transtatic.git"
+  },
+  "author": "Joshua De Leon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshuadeleon/transtatic/issues"
+  },
+  "homepage": "https://github.com/joshuadeleon/transtatic#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}

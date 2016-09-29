@@ -1,0 +1,50 @@
+#bluePlanet {
+   background: #3259B3;
+   width: 36px;
+   height: 36px;
+   border-radius: 18px;
+   position: absolute;    
+}
+
+#greenPlanet {
+	background: #4CA66C;
+	width: 20px;
+	height: 20px;
+	border-radius: 10px;
+	position: absolute;
+}
+
+#redPlanet {
+	background: #E04F4F;
+	width: 24px;
+	height: 24px;
+	border-radius: 12px;
+	position: absolute;
+}
+
+#ballPath {
+   border: 1px solid #ffffff;
+   border-radius: 100px;
+   position: absolute;
+   width: 200px;
+   height: 200px;
+   left: 100px;
+   top: 100px;
+}
+
+#sol {
+   background: yellow;
+   border: 1px solid black; 
+	width: 20px;
+   height: 20px;
+   border-radius: 10px;
+   position: absolute;   
+}
+
+.scaleUp {
+	transform:scale(1.1);
+	-ms-transform:scale(1.1); /* IE 9 */
+	-moz-transform:scale(1.1); /* Firefox */
+	-webkit-transform:scale(1.1); /* Safari and Chrome */
+	-o-transform:scale(1.1); /* Opera */   
+}

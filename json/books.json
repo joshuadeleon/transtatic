@@ -1,0 +1,34 @@
+{
+	"Current": [
+		{
+			"Author": "Samer Buna",
+			"Length": "102",
+			"PercentComplete": 0.25,
+			"Title": "React.js Succinctly",
+			"Type": 1
+		},
+		{
+			"Author": "Samer Buna",
+			"Length": "102",
+			"PercentComplete": 0.5,
+			"Title": "React.js Succinctly",
+			"Type": 1
+		},
+		{
+			"Author": "Kris van der Mast",
+			"Length": "94",
+			"PercentComplete": 0.5,
+			"Title": "Gulp Succinctly",
+			"Type": 1
+		}
+	],
+	"Previous": [
+		{
+			"Author": "Bill Laboon",
+			"Length": "223",
+			"PercentComplete": 1,
+			"Title": "A Friendly Introduction to Software Testing",
+			"Type": 1
+		}
+	]
+}

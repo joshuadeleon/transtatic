@@ -1,0 +1,80 @@
+body {
+	font-family: 'Open Sans', Arial, Arial, Helvetica, sans-serif;
+	color: rgb(230, 230, 230);
+	background-color: rgb(51, 51, 51);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Source Code Pro', monospace;
+}
+
+.page {
+	padding: 1em;
+}
+
+footer {
+	bottom: 0;
+	background-color: rgb(0, 0, 0);
+	height: 1em;
+	position: fixed;
+	width: 100%;
+}
+
+.row {
+	margin-bottom: 1rem;
+}
+
+#future {
+	margin-top: 3rem;
+}
+
+.icon-transtatic {
+	background-image: url("../../img/orbit-c.png");
+	max-width: 100%;
+	height: 32px;
+	display: inline-flex;
+	width: 32px;
+	vertical-align: middle;
+}
+
+.title {
+	display: inline-flex;
+}
+
+.book {
+	background-color: rgba(255, 255, 255, .05);
+	padding: .5em;
+	border-radius: .25em;
+	border: 1px solid rgb(150, 150, 150);
+	margin: .3em 1em 1em;
+}
+
+.book .book-item {
+	font-size: 80%;
+}
+
+.book .book-subItem {
+	font-size: 70%;
+	display: inline-block;
+	margin: 0 2em 0 0;
+}
+
+.book .book-subItem_status {
+	width: 15%;
+}
+
+.book .book-subItem_author {
+	width: 60%;
+	text-align: center;
+}
+
+.book .book-subItem_pages {
+	width: 20%;
+	text-align: right;
+}
+
