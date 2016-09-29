@@ -19,15 +19,15 @@ function HideElements() {
 }
 
 //	Reads a JSON file. 
-function readJSONFile(file) {
-	var jsonFile = new XMLHttpRequest();
-	//jsonFile.responseType = "json";
-	jsonFile.open("GET", file, true);
-	jsonFile.onreadystatechange = function () {
-		if (jsonFile.readyState === XMLHttpRequest.DONE && (jsonFile.status === 200 || jsonFile.status === 0)) {
-			//	TODO: handle any errors
-			return JSON.parse(jsonFile.responseText);
+function readJSONFile(file, callback) {
+	var jsonFileXhr = new XMLHttpRequest();
+	jsonFileXhr.callback = callback;
+	jsonFileXhr.onreadystatechange = function () {
+		if (jsonFileXhr.readyState === XMLHttpRequest.DONE && (jsonFileXhr.status === 200 || jsonFileXhr.status === 0)) {
+			//	TODO: handle any errors, sloppy code
+			callback(JSON.parse(jsonFileXhr.responseText));
 		}
 	}
-	jsonFile.send(null);
+	jsonFileXhr.open("GET", file, true);
+	jsonFileXhr.send(null);
 }

@@ -12,32 +12,49 @@ $(function () {
 	// 	};
 	// });
 
-	var booksJson = readJSONFile("json/books.json");
-	console.log(books);
-
+	readJSONFile("json/books.json", function (json) {
+		console.log(json);
+		ReactDOM.render(React.createElement(BookList, { data: json.Current }), document.getElementById('booksCurrent'));
+		ReactDOM.render(React.createElement(BookList, { data: json.Previous }), document.getElementById('booksPrevious'));
+	});
+	
+	var completed = function (value) {
+		if (value < .25) 
+			return "fa-battery-empty";
+		if (value < .5)
+			return "fa-battery-quarter";
+		if (value < .75)
+			return "fa-battery-half";
+		if (value < 1)
+			return "fa-battery-three-quarters";
+		if (value == 1)
+			return "fa-battery-full";
+		
+		return "fa-exclamation-circle";
+	}
 	var Book = function Book(props) {
 		return React.createElement(
 			"div",
-			{ "class": "book medium-6 large-3 columns" },
+			{ "className": "book medium-6 large-3 columns end" },
 			React.createElement(
 				"div",
-				{ "class": "book-item" },
-				props.Title
+				{ "className": "book-item" },
+				props.title
 			),
 			React.createElement(
 				"div",
 				null,
-				React.createElement("i", { "class": "fa fa-battery-empty book-subItem" }),
+				React.createElement("i", { "className": "fa " + completed(props.complete) + " book-subItem" }),
 				React.createElement(
 					"span",
-					{ "class": "book-subItem" },
-					props.Author
+					{ "className": "book-subItem" },
+					props.author
 				),
 				React.createElement(
 					"span",
-					{ "class": "book-subItem" },
-					props.Length,
-					"}pp"
+					{ "className": "book-subItem" },
+					props.length,
+					"pp"
 				)
 			)
 		);
@@ -46,12 +63,17 @@ $(function () {
 	var BookList = function BookList(props) {
 		return React.createElement(
 			"div",
-			{ "class": "row" },
+			{ "className": "row" },
 			props.data.map(function (x) {
-				return React.createElement(Book, { title: x.title, author: x.author });
+				return React.createElement(Book, { 
+					title: x.Title, 
+					author: x.Author, 
+					length: x.Length,
+					complete: x.PercentComplete
+				});
 			})
 		);
 	};
 
-	ReactDOM.render(React.createElement(BookList, { data: booksJson.Current }), document.getElementById('books'));
+	
 });
