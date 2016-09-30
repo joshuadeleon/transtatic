@@ -13,16 +13,16 @@
 			"PercentComplete": 0.25,
 			"Title": "Data Access for Highly-Scalable Solutions: Using SQL, NoSQL, and Polyglot Persistence",
 			"Type": 1
-		},
+		}		
+	],
+	"Previous": [
 		{
 			"Author": "Kris van der Mast",
 			"Length": "94",
-			"PercentComplete": 0.5,
+			"PercentComplete": 1,
 			"Title": "Gulp Succinctly",
 			"Type": 1
-		}
-	],
-	"Previous": [
+		},
 		{
 			"Author": "Bill Laboon",
 			"Length": "223",
