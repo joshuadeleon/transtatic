@@ -8,10 +8,10 @@
 			"Type": 1
 		},
 		{
-			"Author": "Samer Buna",
-			"Length": "102",
-			"PercentComplete": 0.5,
-			"Title": "React.js Succinctly",
+			"Author": "Douglas McMurtry, Andrew Oakley, etc al.",
+			"Length": "245",
+			"PercentComplete": 0.25,
+			"Title": "Data Access for Highly-Scalable Solutions: Using SQL, NoSQL, and Polyglot Persistence",
 			"Type": 1
 		},
 		{
@@ -28,6 +28,13 @@
 			"Length": "223",
 			"PercentComplete": 1,
 			"Title": "A Friendly Introduction to Software Testing",
+			"Type": 1
+		},
+		{
+			"Author": "Bruce A. Tate",
+			"Length": "302",
+			"PercentComplete": 0.75,
+			"Title": "Seven Languages in Seven Weeks",
 			"Type": 1
 		}
 	]
