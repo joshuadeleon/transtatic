@@ -1,13 +1,6 @@
 {
 	"Current": [
 		{
-			"Author": "Samer Buna",
-			"Length": "102",
-			"PercentComplete": 0.25,
-			"Title": "React.js Succinctly",
-			"Type": 1
-		},
-		{
 			"Author": "Douglas McMurtry et al.",
 			"Length": "245",
 			"PercentComplete": 0.25,
@@ -16,6 +9,13 @@
 		}		
 	],
 	"Previous": [
+		{
+			"Author": "Samer Buna",
+			"Length": "102",
+			"PercentComplete": 1,
+			"Title": "React.js Succinctly",
+			"Type": 1
+		},
 		{
 			"Author": "Kris van der Mast",
 			"Length": "94",
