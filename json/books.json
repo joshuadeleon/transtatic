@@ -6,7 +6,22 @@
 			"PercentComplete": 0.25,
 			"Title": "Data Access for Highly-Scalable Solutions: Using SQL, NoSQL, and Polyglot Persistence",
 			"Type": 1
-		}		
+		},
+		{
+			"Author": "William Shotts",
+			"Length": "504",
+			"PercentComplete": 0.25,
+			"Title": "The Linux Command Line: A Complete Introduction",
+			"Type": 1
+		},
+		{
+			"Author": "Miran Lipovača",
+			"Length": "376",
+			"PercentComplete": 0.25,
+			"Title": "Learn You a Haskell for Great Good!",
+			"Type": 1
+		}
+
 	],
 	"Previous": [
 		{
@@ -35,6 +50,20 @@
 			"Length": "302",
 			"PercentComplete": 0.75,
 			"Title": "Seven Languages in Seven Weeks",
+			"Type": 1
+		},
+		{
+			"Author": "Elton Stoneman",
+			"Length": "85",
+			"PercentComplete": 0.75,
+			"Title": "HBase Succinctly",
+			"Type": 1
+		},
+		{
+			"Author": "Nishant Greg",
+			"Length": "164",
+			"PercentComplete": 0.75,
+			"Title": "HBase Essentials",
 			"Type": 1
 		}
 	]
